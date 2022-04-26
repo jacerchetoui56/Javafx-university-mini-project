@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demodb.homeController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@images/0a8b673e-05bc-4a7b-8194-5b554d5d4469.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="101.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you Student or Teacher ?" wrappingWidth="216.21795654296875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="222.0" layoutY="436.0" mnemonicParsing="false" onAction="#signAsStudent" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-background-radius: 13; -fx-font-family: poppins; -fx-font-size: 15; -fx-border-color: #067d84; -fx-border-radius: 13; -fx-border-width: 2;" text="Student" textFill="#067d84">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="74.0" layoutY="436.0" mnemonicParsing="false" onAction="#signAsTeacher" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-background-radius: 13; -fx-font-family: poppins; -fx-font-size: 15; -fx-border-color: #0f0fcf; -fx-border-radius: 13; -fx-border-width: 2;" text="Teacher" textFill="#0f0fcf">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Circle fill="#ffffff00" layoutX="952.0" layoutY="34.0" radius="12.0" stroke="#868686" strokeType="INSIDE" />
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="945.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/exit.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="944.0" layoutY="21.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="152.0" layoutY="524.0" mnemonicParsing="false" onAction="#aboutus" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: transparent; -fx-background-radius: 13; -fx-font-family: poppins; -fx-font-size: 15; -fx-border-color: #ff0000; -fx-border-radius: 13; -fx-border-width: 2;" text="About Us" textFill="RED">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

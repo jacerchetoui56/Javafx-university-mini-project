@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demodb.signUpTeacherController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@images/back.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="332.0" layoutY="131.0" minHeight="400.0" minWidth="300.0" mnemonicParsing="false" prefHeight="483.0" prefWidth="369.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-style: solid; -fx-border-color: #067d84; -fx-border-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" textFill="#0f0fcf" />
+      <TextField fx:id="firstName" layoutX="413.0" layoutY="250.0" prefHeight="30.0" prefWidth="203.0" promptText="First Name" style="-fx-background-color: #f2f3ff; -fx-border-color: #c7c7c7a6; -fx-border-width: 0 0 2px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="lastName" layoutX="413.0" layoutY="300.0" prefHeight="30.0" prefWidth="203.0" promptText="Last Name" style="-fx-background-color: #f2f3ff; -fx-border-color: #c7c7c7a6; -fx-border-width: 0 0 2px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="cinField" layoutX="413.0" layoutY="350.0" prefHeight="30.0" prefWidth="203.0" promptText="CIN Number" style="-fx-background-color: #f2f3ff; -fx-border-color: #c7c7c7a6; -fx-border-width: 0 0 2px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="cityField" layoutX="413.0" layoutY="450.0" prefHeight="30.0" prefWidth="203.0" promptText="City" style="-fx-background-color: #f2f3ff; -fx-border-color: #c7c7c7a6; -fx-border-width: 0 0 2px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="subjectField" layoutX="413.0" layoutY="500.0" prefHeight="30.0" prefWidth="203.0" promptText="Subject" style="-fx-background-color: #f2f3ff; -fx-border-color: #c7c7c7a6; -fx-border-width: 0 0 2px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button layoutX="453.0" layoutY="547.0" mnemonicParsing="false" onAction="#signUp" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #0f0fcf; -fx-background-radius: 13; -fx-effect: dropshadow(three-pass-box, rgba(34,233,213,1), 10, 0, 0, 0);" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="125.0" layoutY="50.0">
+         <image>
+            <Image url="@images/hh_pr.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="393.0" layoutY="165.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="253.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #0f0fcf; -fx-background-color: #c7c7c738;" text="Teacher Sign Up" textFill="#0f0fcf">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="genderMale" layoutX="447.0" layoutY="416.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="genderFemale" layoutX="528.0" layoutY="416.0" mnemonicParsing="false" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="139.0" layoutY="56.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: transparent;" />
+      
+   </children>
+</Pane>
